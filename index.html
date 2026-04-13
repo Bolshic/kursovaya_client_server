@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серебряная груша – Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="img/logo1.png" alt="Серебряная груша" class="logo__image">
+                Серебряная груша
+            </a>
+            <div class="header__contacts">
+                <a href="tel:+79991234567" class="header__phone"><i class="fas fa-phone-alt"></i> <span class="contact-text">+7 (999) 123-45-67</span></a>
+                <a href="mailto:info@silverpear.ru" class="header__email"><i class="fas fa-envelope"></i> <span class="contact-text">info@silverpear.ru</span></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="track-order.html" class="nav__link">Заказы</a></li>
+                </ul>
+            </nav>
+            <div class="header__cart">
+                <a href="cart.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Косметика, в которую невозможно не влюбиться</h1>
+                <p class="hero__subtitle">Натуральные ингредиенты, современные технологии и утончённый аромат</p>
+                <a href="catalog.html" class="btn btn--primary">Перейти в каталог</a>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <div class="advantages__grid">
+                    <div class="advantage-card">
+                        <i class="fas fa-leaf advantage-card__icon"></i>
+                        <h3 class="advantage-card__title">100% натурально</h3>
+                        <p class="advantage-card__text">Только природные компоненты без парабенов и силиконов.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <i class="fas fa-truck advantage-card__icon"></i>
+                        <h3 class="advantage-card__title">Быстрая доставка</h3>
+                        <p class="advantage-card__text">Доставляем по всей России от 2 дней.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <i class="fas fa-gem advantage-card__icon"></i>
+                        <h3 class="advantage-card__title">Премиум качество</h3>
+                        <p class="advantage-card__text">Вся продукция сертифицирована и протестирована.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Хиты продаж  -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Хиты продаж</h2>
+                <div class="product-grid product-grid--featured" id="featured-products-grid">
+                    <!-- Карточки товаров загрузятся через JS -->
+                    <div class="loading">Загрузка...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="preview-catalog">
+            <div class="container">
+                <h2 class="section-title">Популярные категории</h2>
+                <div class="categories-preview">
+                    <a href="category.html?cat=face" class="category-preview-card">
+                        <img src="img/кат_уход_лицо2.avif" alt="Уход за лицом" class="category-preview-card__image">
+                        <h3 class="category-preview-card__title">Уход за лицом</h3>
+                    </a>
+                    <a href="category.html?cat=body" class="category-preview-card">
+                        <img src="img/кат_уход_тело2.jpg" alt="Уход за телом" class="category-preview-card__image">
+                        <h3 class="category-preview-card__title">Уход за телом</h3>
+                    </a>
+                    <a href="category.html?cat=perfume" class="category-preview-card">
+                        <img src="img/кат_парфюм2.jpg" alt="Парфюмерия" class="category-preview-card__image">
+                        <h3 class="category-preview-card__title">Парфюмерия</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Отзывы наших покупателей</h2>
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__text">«Кремы просто волшебные! Кожа стала нежной и увлажнённой.»</p>
+                        <cite class="testimonial-card__author">— Екатерина С.</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__text">«Парфюм держится весь день, а аромат изысканный. Спасибо!»</p>
+                        <cite class="testimonial-card__author">— Дмитрий Л.</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__text">«Доставка очень быстрая, а подарок внутри порадовал.»</p>
+                        <cite class="testimonial-card__author">— Алина М.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статьи / Новости -->
+        <section class="articles">
+            <div class="container">
+                <h2 class="section-title">Новости и статьи</h2>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <img src="img/new_o_brende.jpg" alt="О бренде" class="article-card__image">
+                        <h3 class="article-card__title">О бренде «Серебряная груша»</h3>
+                        <p class="article-card__excerpt">Мы создаём натуральную косметику с любовью к природе и заботой о вашей красоте. Узнайте историю нашего бренда...</p>
+                        <a href="article-brand.html" class="read-more">Читать далее →</a>
+                    </article>
+                    <article class="article-card">
+                        <img src="img/new_collection.jpg" alt="Новые предложения" class="article-card__image">
+                        <h3 class="article-card__title">Весенние новинки 2026</h3>
+                        <p class="article-card__excerpt">Лёгкие текстуры, увлажняющие сыворотки и нежные ароматы. Встречайте обновлённую коллекцию ухода за лицом...</p>
+                        <a href="article-new.html" class="read-more">Читать далее →</a>
+                    </article>
+                    <article class="article-card">
+                        <img src="img/new_sovet.png" alt="Советы" class="article-card__image">
+                        <h3 class="article-card__title">Как выбрать уход по типу кожи</h3>
+                        <p class="article-card__excerpt">Советы наших косметологов: определяем тип кожи и подбираем идеальный уход. Читайте в нашем блоге...</p>
+                        <a href="article-tips.html" class="read-more">Читать далее →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Всплывающее уведомление (тост) -->
+    <div class="toast" id="toast">Товар добавлен в корзину</div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__copyright">© 2026 Серебряная груша. Большева Анна, Лебедева Софья</div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="track-order.html">Заказы</a></li>
+                </ul>
+            </nav>
+            <div class="footer__socials">
+                <a href="https://vk.com/ваша_страница" target="_blank">
+                    <img src="img/icon_vk.jpg" alt="VK" class="social-icon">
+                </a>
+                <a href="https://t.me/ваш_канал" target="_blank">
+                    <img src="img/icon_tg.jpg" alt="Telegram" class="social-icon">
+                </a>
+                <a href="https://wa.me/вашномер" target="_blank">
+                    <img src="img/icon_whatsapp.jpg" alt="WhatsApp" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/featured.js"></script> 
+    <script src="js/products-data.js"></script>
+    <script src="js/featured-products.js"></script>
+</body>
+</html>

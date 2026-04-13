@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О бренде – Серебряная груша</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="img/logo1.png" alt="Серебряная груша" class="logo__image">
+                Серебряная груша
+            </a>
+            <div class="header__contacts">
+                <a href="tel:+79991234567" class="header__phone"><i class="fas fa-phone-alt"></i> <span class="contact-text">+7 (999) 123-45-67</span></a>
+                <a href="mailto:info@silverpear.ru" class="header__email"><i class="fas fa-envelope"></i> <span class="contact-text">info@silverpear.ru</span></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="track-order.html" class="nav__link">Заказы</a></li>
+                </ul>
+            </nav>
+            <div class="header__cart">
+                <a href="cart.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="article-page">
+            <div class="container">
+                <h1 class="article-page__title">О бренде «Серебряная груша»</h1>
+                <div class="article-page__meta">Опубликовано: 12 апреля 2026</div>
+                <img src="img/new_o_brende.jpg" alt="Серебряная груша – натуральная косметика" class="article-page__image">
+                <div class="article-page__content">
+                    <p>«Серебряная груша» — это российский бренд натуральной косметики, созданный в 2020 году. Мы объединили любовь к природе, современные биотехнологии и традиции аптечного дела.</p>
+                    <h2>Наша философия</h2>
+                    <p>Мы верим, что красота не требует жертв. Наша продукция не содержит парабенов, силиконов, искусственных красителей и животных компонентов. Каждый рецепт разрабатывается совместно с косметологами и дерматологами, чтобы обеспечить максимальную эффективность и безопасность.</p>
+                    <p>Название «Серебряная груша» символизирует редкость и ценность натуральных ингредиентов. Серебро — это чистота и защита, а груша — нежность и естественность.</p>
+                    <h2>Наши принципы</h2>
+                    <ul>
+                        <li>🌿 Только натуральные компоненты</li>
+                        <li>🧪 Научный подход к разработке формул</li>
+                        <li>💚 Эко-упаковка и ответственное производство</li>
+                        <li>🐾 Без жестоких испытаний (Cruelty-Free)</li>
+                    </ul>
+                    <p>Мы гордимся тем, что наши продукты получают положительные отзывы от тысяч покупателей по всей России. «Серебряная груша» — это косметика, в которую невозможно не влюбиться.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <div class="toast" id="toast">Товар добавлен в корзину</div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__copyright">© 2026 Серебряная груша. Большева Анна, Лебедева Софья</div>
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="track-order.html">Заказы</a></li>
+                </ul>
+            </nav>
+            <div class="footer__socials">
+                <a href="https://vk.com/ваша_страница" target="_blank"><img src="img/icon_vk.jpg" alt="VK" class="social-icon"></a>
+                <a href="https://t.me/ваш_канал" target="_blank"><img src="img/icon_tg.jpg" alt="Telegram" class="social-icon"></a>
+                <a href="https://wa.me/вашномер" target="_blank"><img src="img/icon_whatsapp.jpg" alt="WhatsApp" class="social-icon"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
